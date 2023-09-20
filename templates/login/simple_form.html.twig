@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<form action="show" method="post">
+			<ul>
+				<li>
+					<label for="First_name">First Name</label>
+					<input type="text" class="fname" name="fname" placeholder="first name">
+				</li>
+				<li>
+					<label for="Last_name">Last Name</label>
+					<input type="text" class="lname" name ="lname" placeholder="last name">
+				</li>
+			</ul>
+      <button type="submit">submit</button>
+		</form>
+    {{first_name}}
+    {{last_name}}
+{% endblock %}
+		
+   

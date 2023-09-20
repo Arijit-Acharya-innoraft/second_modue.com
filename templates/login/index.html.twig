@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{project_title}}
+{% endblock %}
+
+
+{% block body %}
+	{# 
+	<div class="logo-section">
+	    <div class="container">
+	        <div class="logo-row">
+	            <a href="#">Login</a>
+	        </div>
+	    </div>
+	</div>
+	<div class="form-section">
+	    <div class="container">
+	      <div class="form-row">
+	        <h4>Log In</h4>
+	        <form action="backend/login_backend.php" method="post">
+	          <div class="inp">
+	            <i class="fa-solid fa-envelope"></i>
+	            <input type="email" name="email" class="inp_style" placeholder="Your Email" id="email" autocomplete="off" required onblur="validateEmail()";>
+	          </div>
+	          <span id="email_error"> </span>
+	          <div class="inp">
+	            <i class="fa-solid fa-lock"></i>
+	            <input type="password" name="password" class="inp_style" placeholder="Enter password" autocomplete="off" id="password" required onblur="validatePassword()";>
+	            <i class="fa-solid fa-eye" id="eye" onmouseenter ="showFunction()" onmouseout="hideFunction()"></i> 
+	          </div>
+	          <span id="pass_err"></span>
+	          <div class="submit-button">
+	            <button type="submit" id="btn" onclick="log()" >Log In</button>
+	          </div>
+	        </form>
+	
+	        <!-- Forgot passward section. -->
+	        <div class="forgot-password">
+	          <a href="forgot_password.php">Forgot Your Password?</a>
+	        </div>
+	        <!-- Going to signup section. -->
+	        <div class="signup">
+	          <p>Don't have an account <a href="signup.php">Sign Up </a> now. </p>
+	        </div>
+	        <!-- Error displaying section. -->
+	        <div class="err_msg">
+	          <span> </span>
+	        </div>
+	      </div>
+	    </div>
+	  </div> #}
+
+	{% for movie in movies %}
+		<li>
+			{{ movie }}
+		</li>
+	{% endfor %}
+{% endblock %}
